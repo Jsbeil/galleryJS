@@ -1,0 +1,31 @@
+.galery{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 0 340px;
+}
+
+
+.galery-img {
+    width: 250px;
+    height: 150px;
+}
+.galery .galery-item:nth-child(2){
+    text-align: center;
+}
+.galery .galery-item:nth-child(3){
+    text-align:end;
+}
+
+.imgOpen{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img-open{
+    width: 500px;
+    height: 350px;
+}
+
+.img-close{
+    display: none;
+}
