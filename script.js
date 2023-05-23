@@ -29,7 +29,7 @@ let imgCollection = document.getElementById('imgCollection');
 for(let i = 0 ; i < Arrgalery.length; i++){
     galery.innerHTML += `
     <div class="galery-item">
-       <img class="galery-img" onclick="openImg()" id=${Arrgalery[i].id} src=${Arrgalery[i].scr}></img>
+       <img class="galery-img" onclick="openImg()" onmouseover="aaaa()" id='slider' id=${Arrgalery[i].id} src=${Arrgalery[i].scr}></img>
         <div class="galert-title">${Arrgalery[i].Nametitle}</div>
     </div>`;
 }
@@ -43,8 +43,8 @@ function openImg(){
     for(let i = 0 ; i < Arrgalery.length; i ++){
         if(id === Arrgalery[i].id){
             imgCollection.innerHTML = `
-            <a href=${Arrgalery[i].href}><img class="img-open" onclick="closeImg()" src="${Arrgalery[i].scr}"></img></a>
-            <div class="img-title-open">${Arrgalery[i].title}</div>
+            <img class="img-open" onclick="closeImg()" src="${Arrgalery[i].scr}"></img>
+            <a href=${Arrgalery[i].href}><div class="img-title-open">${Arrgalery[i].title}</div></a>
             `; 
         }
           
